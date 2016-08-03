@@ -20,4 +20,8 @@ invalid syntax
 unexpected character after line continuation character
 引号少加了 ？？？
 
+
+"TypeError: 'module' object is not callable"
+
+把module当作函数来调用  如  module(1,2)
 '''
