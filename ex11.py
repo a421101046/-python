@@ -12,7 +12,7 @@ print "你多重呀" ,
 
 weight = raw_input()
 
-print "你现今%r岁 ,你有%r高 ,你有%r重 "  % (age , height ,weight)
+print "你现今%r岁 ,你有%r高 ,你有%s重 "  % (age , height ,weight)
 
 
 # 在每行 加了个逗号 ,这样print输出就不跑到下一行了。

@@ -10,7 +10,7 @@ things[1] = 'd'
 print things				# 结果['a', 'd', 'c', 'd']
 
 
-# 以下例子表明, 字典的value可以为list,number,str类型(实际上可以为任意类型). key可以为str类型
+# 以下例子表明, 字典的value可以为list,number,str,functionm,tuple类型(实际上可以为任意类型). key可以为不可变类型 如tuple int str
 # del 实现字典的key - value的删除
 stuff = {'name': 'chen', 'age': 22 ,'height': '174'}
 print stuff['age']			# 结果 22

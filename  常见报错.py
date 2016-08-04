@@ -24,4 +24,9 @@ unexpected character after line continuation character
 "TypeError: 'module' object is not callable"
 
 把module当作函数来调用  如  module(1,2)
+
+TypeError: %d format: a number is required
+字符串格式化传的类型不对
+
 '''
+

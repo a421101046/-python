@@ -17,7 +17,7 @@ cars_driven = drivers
 carpool_capacity = cars_driven * space_in_a_car
 
 # 每辆车有多少个乘客
-average_passengers_per_car = passengers / cars_driver
+average_passengers_per_car = passengers / cars_driven
 
 print "这里有", cars ,"可以用"
 
