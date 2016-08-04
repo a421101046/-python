@@ -1,3 +1,5 @@
+# Python 的规则里,只要一行以“冒号(colon)”:结尾,它接下来的内容就应该有缩进。
+
 1.print函数（打印的函数）
 	print 直接加字符串					   						  如 print "hello world"
 	print 表达式或变量,表达式或变量 	        					  加 逗号，可以打印多个表达式或变量但不换行	    
@@ -6,8 +8,23 @@
 	print """  这方式可以打印需要换行的长文本 """    										  
 
 2.字符串格式化
-	%r
-	%s
+	%r 打印的是能代表这个对象的信息,能打印任何对象。并且会转义
+	%s 打印的是字符串
+	
+	# example1
+	print "%I am %r"   % "Chinese"	 #  I am 'Chinese'
+	print "I am %s"   % "Chninese"    # I am Chinese
+	
+	# example2	
+	import datetime
+	d = datetime.date.today()
+	
+	print "%s"   % d  # '2011-05-14'
+	print "%r"   % d  # 'datetime.date(2011, 5, 14)'
+	
+		
+	'''详情见 Python格式化字符.rtfd'''
+	
 	
 
 3.运算符
@@ -98,7 +115,7 @@
 	def 函数名 (**args):	 # 把所有传入的参数放入args,args是一个字典,当传入参数不符合要求时,会报错
 		print agrs      #  当函数为test时,参数要这样  test(c="test",b="fsdfds")
 
-
+	# 写函数的注意事项  详见函数的注意事项.py
 10. list操作函数
 	参见计算机科学和python导论 笔记   第六讲
 	
@@ -167,8 +184,20 @@ class Dinner(object):		# 定义类名 将object当做父类
 	d = Dinner()
 	d.order("1")
 
+17. 异常
+	try:
+		a = 1 / 0
+	except MyException:		# 没有传递异常信息
+    	print "MyException encoutered"
+    except Exception ,msg:  # 打印异常信息msg
+		print msp
+	else:		# 当没有异常时执行
+		print "None Exception"
+	finally:	# 不论是否发生异常都会执行finally
+		print "finally"
 
-16. 关键字
+
+17. 关键字
 	# 详情请见 
 	""" 关键字.py"""
 
@@ -193,5 +222,6 @@ class Dinner(object):		# 定义类名 将object当做父类
 
 			range(5) 代表从0到5(不包含5)
 			'''
-		
-	
+13. 选择编码
+	# -- coding: utf-8 --   
+	上面设置当前编码为utf-8
